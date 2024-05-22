@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warner Bros - Action Movies</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap:10px;
+        }
+
+        .movie-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .movie-info h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .movie-info p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Warner Bros Logo" class="logo">
+            <h1>Warner Bros</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="shows.html">TV Shows</a></li>
+                    <li><a href="games.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Action Movies</h2>
+
+        <section>
+            <h3>New Releases</h3>
+            <div class="movie-container">
+                <div class="movie-card">
+                    <img src="images/act1.jpg" alt="Movie 1">
+                    <div class="movie-info">
+                        <h4>Movie 1</h4>
+                        <p>Release Date: October 2024</p>
+                    </div>
+                </div>
+              
+                <div class="movie-card">
+                    <img src="images/act2.jpg" alt="Movie 1">
+                    <div class="movie-info">
+                        <h4>Movie 1</h4>
+                        <p>Release Date: October 2024</p>
+                    </div>
+                </div>
+              
+            
+                <div class="movie-card">
+                    <img src="images/act3.jpg" alt="Movie 1">
+                    <div class="movie-info">
+                        <h4>Movie 1</h4>
+                        <p>Release Date: October 2024</p>
+                    </div>
+                </div>
+              
+           
+			
+			        
+                <div class="movie-card">
+                    <img src="images/act4.jpg" alt="Movie 1">
+                    <div class="movie-info">
+                        <h4>Movie 1</h4>
+                        <p>Release Date: October 2024</p>
+                    </div>
+                </div>
+              <div class="movie-card">
+                    <img src="images/act5.jpg" alt="Movie 1">
+                    <div class="movie-info">
+                        <h4>Movie 1</h4>
+                        <p>Release Date: October 2024</p>
+                    </div>
+                </div>
+           
+			
+			            
+                
+              
+            </div>
+        </section>
+
+        <section>
+            <h3>Upcoming</h3>
+            <div class="movie-container">
+                <div class="movie-card">
+                    <img src="images/act6.jpg" alt="Movie 4">
+                    <div class="movie-info">
+                        <h4>Movie 4</h4>
+                        <p>Release Date: January 2025</p>
+                    </div>
+                </div>
+				<div class="movie-card">
+                    <img src="images/act7.jpg" alt="Movie 4">
+                    <div class="movie-info">
+                        <h4>Movie 4</h4>
+                        <p>Release Date: January 2025</p>
+                    </div>
+                </div>
+				<div class="movie-card">
+                    <img src="images/act8.jpg" alt="Movie 4">
+                    <div class="movie-info">
+                        <h4>Movie 4</h4>
+                        <p>Release Date: January 2025</p>
+                    </div>
+                </div>
+				
+				<div class="movie-card">
+                    <img src="images/act9.jpg" alt="Movie 4">
+                    <div class="movie-info">
+                        <h4>Movie 4</h4>
+                        <p>Release Date: January 2025</p>
+                    </div>
+                </div>
+				
+				<div class="movie-card">
+                    <img src="images/act10.jpg" alt="Movie 4">
+                    <div class="movie-info">
+                        <h4>Movie 4</h4>
+                        <p>Release Date: January 2025</p>
+                    </div>
+                </div>
+				
+            </div>
+        </section>
+		<button onclick="goBack()">Back</button>
+
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+    </footer>
+</body>
+</html>

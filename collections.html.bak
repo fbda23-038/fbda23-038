@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .category {
+            width: 300px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .category img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .category h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .category p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+            <img src="images/logo.png" alt="Warner Bros Logo" style="height: 40px; margin-right: 20px;">
+            <h1 style="margin: 0; font-size: 24px;">Warner Bros</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="shows.html">TV Shows</a></li>
+                    <li><a href="games.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <div class="category">
+        <img src="images/action.jpg" alt="Action">
+        <h2>Action</h2>
+        <p>Get your adrenaline pumping with thrilling action-packed movies and shows. From epic battles to high-speed chases, our action collection is sure to keep you 
+		on the edge of your seat. Experience the excitement and explosive entertainment of action-packed adventures.</p>
+        <a href="action.html" class="category-link">Explore Action</a>
+    </div>
+    <div class="category">
+        <img src="images/romance.jpg" alt="Romance">
+        <h2>Romance</h2>
+        <p>Discover heartwarming stories and fall in love with our romantic collection. Immerse yourself in tales of passionate love, tender moments, and sweeping romances.
+		Whether you're in the mood for a classic love story or a charming romantic comedy, our collection will make your heart flutter.</p>
+        <a href="romance.html" class="category-link">Explore Romance</a>
+    </div>
+    <div class="category">
+        <img src="images/scifi.jpg" alt="Sci-Fi">
+        <h2>Sci-Fi</h2>
+        <p>Embark on futuristic journeys and explore the unknown with our sci-fi titles. From mind-bending concepts to thrilling adventures in distant galaxies, 
+		our sci-fi collection will transport you to other worlds. Experience the wonders of advanced technology, encounter alien species, and delve into the possibilities of the future.</p>
+        <a href="sci-fi.html" class="category-link">Explore Sci-Fi</a>
+    </div>
+</main>
+
+    <footer style="background-color: #1a1a1a; color: #fff; padding: 20px; text-align: center;">
+        <p style="margin: 0; font-size: 14px;">&copy; 2024 Warner Bros. All rights reserved.</p>
+    </footer>
+</body>
+</html>

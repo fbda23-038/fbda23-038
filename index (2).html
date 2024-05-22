@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warner Bros</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+    .video-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: grey;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+    .content-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; 
+      margin-top: 20px; 
+    }
+
+    .content-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 280px; 
+      margin: 10px; 
+    }
+
+    .content-item img {
+      width: 100%;
+      height: 180px; 
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .content-item .content {
+      padding: 15px;
+    }
+
+    .content-item h3 {
+      margin-top: 0;
+      font-size: 18px; /* Adjust card title font size */
+      font-weight: bold;
+    }
+
+    .content-item p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    .content-item a {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+	
+	.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 18px;
+  color: blue;
+}
+	
+  </style>
+</head>
+<body>
+<header style="background-color: #1a1a1a; color: #fff; padding: 20px;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+    <img src="images/logo.png" alt="Warner Bros Logo" style="height: 40px; margin-right: 20px;">
+    <h1 style="margin: 0; font-size: 24px;">Warner Bros</h1>
+    <nav style="display: flex;">
+      <ul style="list-style-type: none; margin: 0; padding: 0; display: flex;">
+        <li style="margin: 0 10px;"><a href="index.html" style="color: #fff;">Home</a></li>
+        <li style="margin: 0 10px;"><a href="movies.html" style="color: #fff;">Movies</a></li>
+        <li style="margin: 0 10px;"><a href="shows.html" style="color: #fff;">TV Shows</a></li>
+        <li style="margin: 0 10px;"><a href="games.html" style="color: #fff;">Games & Apps</a></li>
+        <li style="margin: 0 10px;"><a href="collections.html" style="color: #fff;">Collections</a></li>
+        <li style="margin: 0 10px;"><a href="feedback.html" style="color: #fff;">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="search" style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 20px; padding: 5px;">
+      <input type="text" class="search-input" placeholder="Search..." style="flex: 1; border: none; outline: none; padding: 8px 15px; font-size: 16px;">
+      <button class="search-button" style="background-color: transparent; border: none; outline: none; padding: 8px 15px; cursor: pointer;">
+        <i class="fa fa-search" style="font-size: 18px; color: #666;"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h2>Welcome to Warner Bros</h2>
+      </div>
+    </section>
+
+     <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/VEugEs4cBuU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <div class="overlay"></div>
+    <div class="video-message">
+      <h3>Check out our new releases!</h3>
+      <p>Experience the latest movies, TV shows, and games.</p>
+    </div>
+  </div>
+
+    <div class="content-grid">
+      <div class="content-item">
+        <img src="images/sp2.jpg" alt="Movie Poster">
+        <div class="content">
+          <h3>Blockbuster Movie</h3>
+          <p>Check out our latest hit movie!</p>
+          <a href="https://youtu.be/I3BkmYsz6-s">Watch Now</a>
+        </div>
+      </div>
+      <div class="content-item">
+        <img src="images/77.jpg" alt="TV Show">
+        <div class="content">
+          <h3>Binge-Worthy TV Show</h3>
+          <p>Catch up on our popular series!</p>
+          <a href="https://youtu.be/k1b4XATiAIA">Stream Now</a>
+        </div>
+      </div>
+      <div class="content-item">
+        <img src="images/mv.jpg" alt="Video Game">
+        <div class="content">
+          <h3>Exciting Video Game</h3>
+          <p>Play our newest addictive game!</p>
+          <a href="#">Play Now</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+  </footer>
+</body>
+</html>
